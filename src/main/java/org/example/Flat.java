@@ -8,14 +8,16 @@ public class Flat {
     private double price;
     private String owner;
     private String contactNumber;
+    private Room[] rooms;
 
-    public Flat(String address, int numberRooms, double floorArea, double price, String owner, String contactNumber) {
+    public Flat(String address, int numberRooms, double floorArea, double price, String owner, String contactNumber, Room[] rooms) {
         this.address = address;
         this.numberRooms = numberRooms;
         this.floorArea = floorArea;
         this.price = price;
         this.owner = owner;
         this.contactNumber = contactNumber;
+        this.rooms = rooms;
     }
 
     public String getAddress() {
@@ -40,5 +42,9 @@ public class Flat {
 
     public String getContactNumber() {
         return contactNumber;
+    }
+
+    public Room[] getRooms() {
+        return rooms;
     }
 }
